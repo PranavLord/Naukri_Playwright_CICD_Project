@@ -1,0 +1,77 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Naukri Test Suite">
+
+    <listeners>
+        <listener class-name="com.qa.Naukri.listeners.ExtentReportListener"/>
+    </listeners>
+
+    <!-- Test 1: Run on Chrome -->
+    <test name="LoginPageTest - Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qa.Naukri.Tests.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <test name="HomePageTest - Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qa.Naukri.Tests.HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="ProfilePageTest - Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qa.Naukri.Tests.ProfilePageTest"/>
+        </classes>
+    </test>
+
+    <!-- Test 2: Run on Firefox -->
+    <test name="LoginPageTest - Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.qa.Naukri.Tests.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <test name="HomePageTest - Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.qa.Naukri.Tests.HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="ProfilePageTest - Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.qa.Naukri.Tests.ProfilePageTest"/>
+        </classes>
+    </test>
+
+    <!-- Test 3: Run on WebKit -->
+    <test name="LoginPageTest - WebKit">
+        <parameter name="browser" value="webkit"/>
+        <classes>
+            <class name="com.qa.Naukri.Tests.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <test name="HomePageTest - WebKit">
+        <parameter name="browser" value="webkit"/>
+        <classes>
+            <class name="com.qa.Naukri.Tests.HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="ProfilePageTest - WebKit">
+        <parameter name="browser" value="webkit"/>
+        <classes>
+            <class name="com.qa.Naukri.Tests.ProfilePageTest"/>
+        </classes>
+    </test>
+
+
+</suite>
+
+
